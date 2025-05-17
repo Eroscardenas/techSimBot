@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",                            // Sintaxis moderna de ES2020
+      "lib": ["ES2020", "DOM", "DOM.Iterable"],       // Define las librerías utilizadas
+      "module": "ESNext",                             // Usa módulos de ESNext (import/export)
+      "moduleResolution": "Node",                     // Resolución de módulos tipo Node.js
+      "skipLibCheck": true,                           // Omite la verificación de archivos de bibliotecas            // Permite importar archivos `.ts`/`.tsx`
+      "isolatedModules": true,                        // Necesario si usas herramientas como Vite
+      "jsx": "react-jsx",                             // Habilita el nuevo transformador JSX para React 17+
+      "strict": true,                                 // Habilita el modo estricto de TypeScript
+      "noEmit": false,                                 // No emite archivos `.js` (para proyectos TS solo)
+      "noUnusedLocals": true,                         // Error si se declaran variables no usadas
+      "noUnusedParameters": true,                     // Error si hay parámetros no usados en funciones
+      "noFallthroughCasesInSwitch": true,
+      "esModuleInterop" : true              // Evita errores por "fall-through" en switch
+    },
+    "include": ["src"], 
+    "exclude": ["node_modules"]                               // Asegura que todo el código fuente esté dentro de `src`
+  }
+  
+  
